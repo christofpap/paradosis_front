@@ -46,7 +46,7 @@ class DeliveryItemService {
   static Future<List<LatLng>> fetchEndMarkers() async {
     try {
       final url = Uri.parse(
-        'http://192.168.1.74:3001/api/cma5h66bz0001tv3wt3f6dt2l/items',
+        'http://beeaware.ddns.net:3002/api/cma5h66bz0001tv3wt3f6dt2l/items',
       );
       final response = await http.get(url);
 
@@ -65,7 +65,7 @@ class DeliveryItemService {
   }
   
   static Future<List<DeliveryItem>> fetchFullItems() async {
-  final url = Uri.parse('http://192.168.1.74:3001/api/cma5h66bz0001tv3wt3f6dt2l/items');
+  final url = Uri.parse('http://beeaware.ddns.net:3002/api/cma5h66bz0001tv3wt3f6dt2l/items');
   final response = await http.get(url);
   if (response.statusCode == 200) {
     final data = jsonDecode(response.body);

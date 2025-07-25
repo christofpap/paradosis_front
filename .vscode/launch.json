@@ -2,27 +2,27 @@
   "configurations": [
 
 
-    // {
-    //   "name": "Flutter (Android - CPH2465)",
-    //   "type": "dart",
-    //   "request": "launch",
-    //   "program": "lib/main.dart",
-    //   "args": [
-    //     "-d", "CPH2465",
-    //     "--release"
-    //   ]
-    // }
-    // ,
     {
-      "name": "Flutter (Web - lib\\main.dart)",
+      "name": "Flutter (Android - CPH2465)",
       "type": "dart",
       "request": "launch",
-      "program": "lib\\main.dart",
+      "program": "lib/main.dart",
       "args": [
-        "-d", "chrome",
-        "--web-hostname", "192.168.1.74",
-        "--web-port", "56260"
+        "-d", "CPH2465",
+        "--release"
       ]
     }
+    // ,
+    // {
+    //   "name": "Flutter (Web - lib\\main.dart)",
+    //   "type": "dart",
+    //   "request": "launch",
+    //   "program": "lib\\main.dart",
+    //   "args": [
+    //     "-d", "chrome",
+    //     "--web-hostname", "192.168.1.74",
+    //     "--web-port", "56260"
+    //   ]
+    // }
   ]
 }

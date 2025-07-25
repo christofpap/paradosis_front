@@ -13,7 +13,7 @@ class _LoginPageState extends State<LoginPage> {
   final _usernameController = TextEditingController();
   final _passwordController = TextEditingController();
 
-  final AuthService _authService = AuthService(baseUrl: 'http://192.168.1.74:3001/api');
+  final AuthService _authService = AuthService(baseUrl: 'http://beeaware.ddns.net:3002/api');
 
   String _selectedRole = 'Courier';
   final List<String> _roles = ['Courier', 'Seller'];

@@ -98,7 +98,7 @@ class _MapPageState extends State<map_page> {
       final completedAt = DateFormat('yyyy-MM-dd HH:mm:ss.SSS').format(now);
 
       final uri = Uri.parse(
-        'http://192.168.1.74:3001/api/123456789/trans/'
+        'http://beeaware.ddns.net:3002/api/123456789/trans/'
         'qr/$qr/amountFeeCourier/$amountFeeCourier/'
         'amountTotal/$parsedAmountTotal/method/$method/referenceCode/$referenceCode/'
         'status/$status/completedAt/${Uri.encodeComponent(completedAt)}',
@@ -123,7 +123,7 @@ class _MapPageState extends State<map_page> {
       final statusItem = 'pending';
 
       final urlItem = Uri.parse(
-        'http://192.168.1.74:3001/api/$sessionId/items/'
+        'http://beeaware.ddns.net:3002/api/$sessionId/items/'
         'sellerId/$sellerId/courierId/$courierId/'
         'latStart/$latStart/longStart/$longStart/'
         'latEnd/$latEnd/longEnd/$longEnd/'
